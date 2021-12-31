@@ -29,18 +29,17 @@
 // } 
 
 #app {
-    html {
-      font-size: 37.5px;
-    }
+    @import url("../src/assets/css/midia.css");
     * {
-      margin: 0;
-      padding: 0;
+        margin: 0;
+        padding: 0;
     }
      //  清除router-link的下划线
     a {
        text-decoration: none;
        color: #333;
     }
+
     .router-link-active {
         text-decoration: none;
         color: #ff3a1c;
@@ -52,53 +51,55 @@
         width: 100%;
         display: flex;
         justify-content: space-around;
-        padding: 5px 0;
+        padding: .14rem 0;
         background-color: #fff;
         border-top: 1px solid #DDD ;
-        font-size: 11px;
+        font-size: .3rem;
+
         .home,.category,.cart,.user {
             display: flex;
             justify-content: center;
             flex-direction: column;
             align-items: center;
         }
+
         router-link {
             color: #333;
         }
-        .cart {
-          position: relative;
-          &::after {
-            position: absolute;
-            top: -0.08rem;
-            right: .026667rem;
-            content: "9";
-            display:block;
-            width: .4rem;
-            height: .4rem;
-            font-size: 12px;
-            border-radius: 50%;
-            background-color: #ff3a1c;
-            text-align: center;
-            line-height: .4rem;
-            color:#fff;
 
-          }
-         
-        } 
-        .user {
-               position: relative;
-          &::after {
+        .cart {
+            position: relative;
+            &::after {
               position: absolute;
               top: -0.08rem;
-              right: -0.266667rem;
-              content: "";
+              right: .026667rem;
+              content: "9";
               display:block;
-              width: .266667rem;
-              height: .266667rem;
-              font-size: 12px;
+              width: .4rem;
+              height: .4rem;
+              font-size: .32rem;
               border-radius: 50%;
               background-color: #ff3a1c;
-              }
+              text-align: center;
+              line-height: .4rem;
+              color:#fff;
+            }
+        } 
+
+        .user {
+            position: relative;
+            &::after {
+                position: absolute;
+                top: -0.08rem;
+                right: -0.266667rem;
+                content: "";
+                display:block;
+                width: .266667rem;
+                height: .266667rem;
+                font-size: .32rem;
+                border-radius: 50%;
+                background-color: #ff3a1c;
+                }
           }
     }
 }

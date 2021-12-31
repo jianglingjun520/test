@@ -1,6 +1,8 @@
 <template>
     <div>
-        产品详情页
+        <div class="box">
+
+        </div>
     </div>
 </template>
 
@@ -10,6 +12,6 @@ export default {
 }
 </script>
 
-<style>
+<style scope lang="scss">
 
 </style>
